@@ -36,7 +36,7 @@ public class TouchActivity extends AppCompatActivity {
                     int g = Color.green(color);
                     int b = Color.blue(color);
                     //mTextView_touch.setText("R=" + r + ",G=" + g + ",B=" + b);
-                    mTextView_touch.setText("x=" + x + ",y=" + y + ";R=" + r + ",G=" + g + ",B=" + b);
+                    mTextView_touch.setText("x=" + x + ",y=" + y + ";R=" + r + ",G=" + g + ",B=" + b);//显示XY
                 }
                 return true;
             }
