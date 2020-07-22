@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mBtnClick;
     private Button mBtnTouch;
+    private Button mBtnTem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mBtnClick = findViewById(R.id.click);
         mBtnTouch = findViewById(R.id.touch);
+        mBtnTem = findViewById(R.id.getT);
         mBtnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TouchActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnTem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TemActivity.class);
                 startActivity(intent);
             }
         });

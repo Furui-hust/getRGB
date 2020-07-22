@@ -25,4 +25,15 @@
         android:textColor="#000000"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/getT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/touch"
+        android:layout_marginTop="10dp"
+        android:text="getT"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
 </RelativeLayout>
