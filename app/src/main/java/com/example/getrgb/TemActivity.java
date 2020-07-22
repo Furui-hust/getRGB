@@ -93,7 +93,6 @@ public class TemActivity extends AppCompatActivity {
                             if (temp[i][j] < 800) {
                                 temp[i][j] = 800;
                             }
-                            //每个点的温度，k1为温度微校正系数
                         } else temp[i][j] = 800;
                     }
                 }
