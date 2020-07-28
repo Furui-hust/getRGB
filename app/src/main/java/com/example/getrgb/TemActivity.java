@@ -78,12 +78,10 @@ public class TemActivity extends AppCompatActivity {
                 ref_r = ref_r / number;
                 ref_g = ref_g / number;//选平均值作为参考点进行温度计算
                 double k1 = 0.8;
-                double ref_ir1 = 0;
-                double ref_ig1 = 0;
-                ref_ir1 = getIr(ref_r);
-                ref_ig1 = getIg(ref_g);
+                double ref_ir1 = getIr(ref_r);
+                double ref_ig1 = getIg(ref_g);
                 double ref_temp;
-                ref_temp = -C2 * ((1 / WaveR) - (1 / WaveG)) / Math.log(Math.abs((ref_ir1 * pow(WaveR, 5)) / (ref_ig1 * pow(WaveG, 5))));//参考点温度
+                ref_temp = (-C2 * ((1 / WaveR) - (1 / WaveG))) / Math.log(Math.abs((ref_ir1 * pow(WaveR, 5)) / (ref_ig1 * pow(WaveG, 5))));//参考点温度
                 for (int j = 0; j < height; j++) {
                     for (int i = 0; i < width; i++) {
                         if (R[i][j] > Ry)//需要R值大于计算阈值，如果小于阈值将温度设为800
