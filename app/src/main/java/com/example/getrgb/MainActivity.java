@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mBtnTem.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TemActivity.class);
-                startActivity(intent);
-            }
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, TemActivity.class);
+                    startActivity(intent);
+                }
         });
     }
 }
